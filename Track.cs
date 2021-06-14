@@ -10,6 +10,11 @@ namespace Aufgabe_Musikbox
         public string Title { get; set; }
         public double Lenght { get; set; }
 
-        
+        public Track(int iD, string title, double lenght)
+        {
+            ID = iD;
+            Title = title;
+            Lenght = lenght;
+        }
     }
 }
