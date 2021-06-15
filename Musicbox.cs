@@ -30,7 +30,8 @@ namespace Aufgabe_Musikbox
 
         public void Play(int num)
         {
-            System.Console.WriteLine("Song abspielen");
+            ;
+            System.Console.WriteLine("Die Platte " + "\"" + recordsList[num].Title + "\"" + " wird abgespielt ");
         }
 
     }

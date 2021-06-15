@@ -7,7 +7,6 @@ namespace Aufgabe_Musikbox
         public int ID { get; set; }
         public string Title { get; set; }
         List<Track> tracksList;
-
         public void AddTrackToRecord(Track track)
         {
             tracksList.Add(track);
@@ -18,11 +17,6 @@ namespace Aufgabe_Musikbox
             ID = iD;
             Title = title;
             this.tracksList = tracksList;
-        }
-        public Track GetSong(int num)
-        {
-            
-            return null;
         }
     }
 }
