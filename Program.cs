@@ -7,22 +7,15 @@ namespace Aufgabe_Musikbox
         static void Main(string[] args)
         {
             List<Record> mblist = new List<Record>();
-
-            List<Track> trackList1 = new List<Track>();
-            Track track1 = new Track(1, "Hallo Welt", 2.35);
-            Track track2 = new Track(2, "We are Coding", 3.24);
-
-            Record platte1 = new Record(1, "The World", trackList1);
-            platte1.AddTrackToRecord(track1);
-            platte1.AddTrackToRecord(track2);
-
-
+            Record rec1 = new Record(1, "Happy Coding", 2.38);
+            Record rec2 = new Record(2, "We are Coding", 3.10);
+            Record rec3 = new Record(3, "The Code we are", 2.59);
             Musicbox mb = new Musicbox(mblist);
-            mb.LoadRecord(platte1);
+            mb.LoadRecord(rec1);
+            mb.LoadRecord(rec2);
+            mb.LoadRecord(rec3);
             mb.Play(0);
-
-
-            
+            System.Console.WriteLine(mb.GetSumOfTitleLenght());
         
         }
     }

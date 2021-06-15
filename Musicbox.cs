@@ -30,9 +30,21 @@ namespace Aufgabe_Musikbox
 
         public void Play(int num)
         {
-            ;
-            System.Console.WriteLine("Die Platte " + "\"" + recordsList[num].Title + "\"" + " wird abgespielt ");
+            if(recordsList.Count < 0)
+                System.Console.WriteLine("Keine Platte eingelegt");
+            if(recordsList.Count > 0 && recordsList.Count <= 50)
+                System.Console.WriteLine("Die Platte " + "\"" + recordsList[num].Title + "\"" + " wird abgespielt ");
+            if(recordsList.Count >= 50)
+                System.Console.WriteLine("Musikbox ist voll, bitte zuerst eine Platte entfernen");
         }
-
+        public double GetSumOfTitleLenght()
+        {
+            double playTime = 0;
+            foreach (var item in recordsList)
+            {
+                playTime = playTime + item.Lenght;
+            }
+            return playTime;
+        }
     }
 }

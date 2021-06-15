@@ -4,19 +4,22 @@ namespace Aufgabe_Musikbox
 {
     public class Record
     {
+
+
         public int ID { get; set; }
         public string Title { get; set; }
-        List<Track> tracksList;
-        public void AddTrackToRecord(Track track)
+        public double Lenght { get; set; }
+
+        public Record(int id, string title, double lenght)
         {
-            tracksList.Add(track);
+            ID = id;
+            Title = title;
+            Lenght = lenght;
         }
 
-        public Record(int iD, string title, List<Track> tracksList)
+        public void AddTrackToRecord()
         {
-            ID = iD;
-            Title = title;
-            this.tracksList = tracksList;
+            
         }
     }
 }
