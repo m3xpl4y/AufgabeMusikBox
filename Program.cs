@@ -15,7 +15,7 @@ namespace Aufgabe_Musikbox
             platte1.AddTrackToRecord(track1);
             platte1.AddTrackToRecord(track2);
 
-            System.Console.WriteLine(platte1.ID.ToString());
+            System.Console.WriteLine(platte1.Title.ToString());
         
         }
     }
