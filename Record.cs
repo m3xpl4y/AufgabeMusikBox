@@ -19,5 +19,10 @@ namespace Aufgabe_Musikbox
             Title = title;
             this.tracksList = tracksList;
         }
+        public Track GetSong(int num)
+        {
+            
+            return null;
+        }
     }
 }

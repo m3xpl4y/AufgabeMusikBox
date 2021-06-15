@@ -15,9 +15,23 @@ namespace Aufgabe_Musikbox
         {
             recordsList.Remove(record);
         }
-        public void SearchRecord()
+        public void SearchRecord(Record record)
         {
-            
+            if(recordsList.Contains(record))
+            {
+                System.Console.WriteLine();
+            }
         }
+
+        public Musicbox(List<Record> recordsList)
+        {
+            this.recordsList = recordsList;
+        }
+
+        public void Play(int num)
+        {
+            System.Console.WriteLine("Song abspielen");
+        }
+
     }
 }
