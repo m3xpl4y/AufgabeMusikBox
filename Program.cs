@@ -15,6 +15,7 @@ namespace Aufgabe_Musikbox
             mb.LoadRecord(rec2);
             mb.LoadRecord(rec3);
             mb.Play(0);
+            mb.SearchRecord("Happy");
             System.Console.WriteLine(mb.GetSumOfTitleLenght());
         
         }

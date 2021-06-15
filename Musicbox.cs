@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using System.Collections.Generic;
 
 namespace Aufgabe_Musikbox
@@ -46,10 +47,15 @@ namespace Aufgabe_Musikbox
             }
             return playTime;
         }
-        public string SearchRecord()
+        public void SearchRecord(string title)
         {
-            
-            return null;
+            foreach (var item in recordsList)
+            {
+                if(item.Title.Contains(title))
+                {
+                    System.Console.WriteLine("Titel wurde gefunden!");
+                }
+            }
         }
     }
 }
