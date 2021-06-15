@@ -4,8 +4,6 @@ namespace Aufgabe_Musikbox
 {
     public class Record
     {
-
-
         public int ID { get; set; }
         public string Title { get; set; }
         public double Lenght { get; set; }
@@ -15,11 +13,6 @@ namespace Aufgabe_Musikbox
             ID = id;
             Title = title;
             Lenght = lenght;
-        }
-
-        public void AddTrackToRecord()
-        {
-            
         }
     }
 }

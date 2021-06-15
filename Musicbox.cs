@@ -46,5 +46,10 @@ namespace Aufgabe_Musikbox
             }
             return playTime;
         }
+        public string SearchRecord()
+        {
+            
+            return null;
+        }
     }
 }
